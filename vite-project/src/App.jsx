@@ -11,7 +11,7 @@ function App() {
 useEffect(()=>{fetchquote()},[])
   
 function fetchquote(){ 
-  fetch('http://localhost:8000/generate_quote')
+  fetch('https://api.kanye.rest/')
     .then((res)=>{
       return res.json()
     })
